@@ -1,0 +1,11 @@
+langchain-core==0.3.75
+langchain-groq==0.3.8
+langchain
+langchain-community
+sentence-transformers
+faiss-cpu
+chromadb
+python-dotenv
+streamlit
+requests
+# smtplib is part of the Python standard library; no pip package
