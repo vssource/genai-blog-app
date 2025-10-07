@@ -8,7 +8,7 @@ st.title("📝 GenAI Blog Generator")
 st.write("Generate professional blog posts using Llama 3.3 70B (Groq API).")
 
 # User input
-topic = st.text_input("Enter your blog topic:")
+topic = st.text_area("Enter your blog topic:")
 email = False #st.text_input("Enter your email to receive the blog:")
 
 if st.button("Generate Blog"):
