@@ -22,7 +22,7 @@ if st.button("Generate Blog"):
                 st.write(blog_content)
 
                 if email:
-                    send_email(email, blog_content)
+                    #send_email(email, blog_content)
                     st.success(f"Blog sent to {email}")
                 else:
                     st.info("No email entered. Blog not sent.")
