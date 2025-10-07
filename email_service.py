@@ -1,3 +1,4 @@
+'''
 import os
 import smtplib
 from email.mime.text import MIMEText
@@ -20,3 +21,4 @@ def send_email(to_email: str, blog_content: str):
             server.sendmail(sender_email, to_email, msg.as_string())
     except Exception as e:
         raise RuntimeError(f"Failed to send email: {e}")
+'''

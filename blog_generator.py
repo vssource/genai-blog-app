@@ -1,4 +1,4 @@
-import os
+import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
@@ -10,7 +10,8 @@ def load_system_prompt():
 
 # Blog generation with LangChain
 def generate_blog(user_prompt: str) -> str:
-    groq_api_key = os.getenv("GROQ_API_KEY")
+    #groq_api_key = os.getenv("GROQ_API_KEY")
+    groq_api_key = st.secrets["GROQ_API_KEY"]
     if not groq_api_key:
         raise ValueError("Missing GROQ_API_KEY in environment variables")
 
