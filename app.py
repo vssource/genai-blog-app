@@ -1,6 +1,6 @@
 import streamlit as st
 from blog_generator import generate_blog
-from email_service import send_email
+#from email_service import send_email
 
 st.set_page_config(page_title="GenAI Blog Generator", layout="centered")
 
